@@ -15,8 +15,10 @@
   },
   "devDependencies": {
     "@repo/eslint-config": "workspace:*",
+    "@repo/tailwind-config": "workspace:*",
     "@repo/typescript-config": "workspace:*",
     "prettier": "^3.2.5",
+    "prettier-plugin-tailwindcss": "^0.7.1",
     "turbo": "^2.7.6"
   },
   "packageManager": "pnpm@8.15.5",
