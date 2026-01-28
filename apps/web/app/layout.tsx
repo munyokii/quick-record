@@ -1,4 +1,5 @@
-import "./globals.css";
+import { firaSansCondensed } from '@/app/ui/fonts';
+import "./globals.css"
 
 export default function DashboardLayout({
   children,
@@ -7,9 +8,7 @@ export default function DashboardLayout({
 }) {
   return (
     <html lang="en">
-      <body>
-        {/* Layout UI */}
-        {/* Place children where you want to render a page or nested layout */}
+      <body className={`${firaSansCondensed.className} antialiased`}>
         <main>{children}</main>
       </body>
     </html>
