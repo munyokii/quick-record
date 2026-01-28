@@ -69,7 +69,7 @@ export default function Navbar() {
             <Link href="/" onClick={() => setMobileMenuOpen(false)}>
               <Image
                 alt="Logo"
-                src="/favicon.png"
+                src="/favicon.ico"
                 className="h-8 w-auto"
                 width={300}
                 height={300}
