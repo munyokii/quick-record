@@ -7,6 +7,8 @@ import { MongooseModule } from '@nestjs/mongoose';
 
 import { AppService } from './app.service';
 import { AppController } from './app.controller';
+import { AuthModule } from './auth/auth.module';
+import { UsersModule } from './users/users.module';
 
 @Module({
   imports: [
@@ -20,7 +22,9 @@ import { AppController } from './app.controller';
         uri: configService.get<string>('MONGODB_URI'),
       }),
     }),
-    LinksModule],
+    LinksModule,
+    AuthModule,
+    UsersModule],
   controllers: [AppController],
   providers: [AppService],
 })
